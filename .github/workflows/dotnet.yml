@@ -45,7 +45,8 @@ jobs:
       uses: simple-elf/allure-report-action@master
       if: always() # Execute even if previous steps fail
       with:
-        allure_results: ${{ vars.ALLURE_RESULTS_PATH }}
+        gh_pages: gh-pages
+        allure_results: bin/Debug/net8.0/allure-results
         allure_history: allure-history
         keep_reports: 5
 
