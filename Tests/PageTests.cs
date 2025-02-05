@@ -7,6 +7,7 @@ using TAF.Tests;
 namespace Tests
 {
     [AllureNUnit]
+    [AllureLabel("layer", "web")]
     public class PageTests : BaseTest
     {
         [Test]

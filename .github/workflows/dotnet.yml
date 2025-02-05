@@ -34,12 +34,12 @@ jobs:
       run: dotnet test --no-build --verbosity normal TAF.sln
     
     - name: Get Allure history
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       if: always() # Execute even if previous steps fail
       continue-on-error: true # Continue execution even if the step fails
       with:
-        ref: dev # Specify the branch to retrieve Allure history from
-        path: dev # Set the destination path for Allure history
+        ref: gh-pages # Specify the branch to retrieve Allure history from
+        path: gh-pages # Set the destination path for Allure history
 
     - name: Allure report action
       uses: simple-elf/allure-report-action@master
