@@ -1,11 +1,18 @@
-﻿using Core.Pages;
+﻿using Allure.Net.Commons;
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
+using Core.Pages;
 using TAF.Tests;
 
 namespace Tests
 {
+    [AllureNUnit]
+    [AllureLabel("layer", "web")]
     public class PageTests : BaseTest
     {
         [Test]
+        [AllureSeverity(SeverityLevel.minor)]
+        [AllureStory("Can click items")]
         public async Task VerifyPurchaseClicks()
         {
             using (var coffeePage = new CoffeeCartPage(Page))
@@ -25,6 +32,8 @@ namespace Tests
         }
 
         [Test]
+        [AllureSeverity(SeverityLevel.minor)]
+        [AllureStory("Can checkout purchase")]
         [TestCase("Jack", "1@coffee.com")]
         public async Task VerifyCheckoutSuccess(string name, string email)
         {

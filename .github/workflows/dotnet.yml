@@ -30,22 +30,43 @@ jobs:
       run: dotnet build --no-restore Tests/Tests.csproj
     - name: Install Playwright Browsers
       run: pwsh Tests/bin/Debug/net8.0/playwright.ps1 install --with-deps
+    
     - name: Test
-      run: dotnet test --no-build --verbosity normal TAF.sln
+      run: dotnet test
+    
+    - name: Upload Allure Results
+      uses: actions/upload-artifact@v4.0.0
+      with:
+        name: allure-results
+        path: Tests/bin/Debug/net8.0/allure-results
+        if-no-files-found: error
+        retention-days: 20
+
+    # - name: Clean up gh-pages branch (optional)
+    #   run: |
+    #       git checkout -f gh-pages
+    #       git rm -rf .
+
+    - name: Download Build Artifact
+      uses: actions/download-artifact@v4.1.0
+      with:
+          name: allure-results
+          path: ./allure-results
     
     - name: Get Allure history
-      uses: actions/checkout@v3
-      if: always() # Execute even if previous steps fail
-      continue-on-error: true # Continue execution even if the step fails
+      uses: actions/checkout@v4
+      if: always()
+      continue-on-error: true
       with:
-        ref: dev # Specify the branch to retrieve Allure history from
-        path: dev # Set the destination path for Allure history
+        ref: gh-pages
+        path: gh-pages
 
-    - name: Allure report action
+    - name: Generate report
       uses: simple-elf/allure-report-action@master
       if: always() # Execute even if previous steps fail
       with:
-        allure_results: ${{ vars.ALLURE_RESULTS_PATH }}
+        gh_pages: gh-pages
+        allure_results: allure-results
         allure_history: allure-history
         keep_reports: 5
 
