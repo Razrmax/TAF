@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2776","VerifyCheckoutSuccess(""Jack"",""1@coffee.com"")","","Wed Feb 05 13:24:52 GMT 2025","passed","Wed Feb 05 13:24:55 GMT 2025","","","PageTests","VerifyCheckoutSuccess"
+"","300","VerifyPurchaseClicks","","Wed Feb 05 13:24:55 GMT 2025","passed","Wed Feb 05 13:24:55 GMT 2025","","","PageTests","VerifyPurchaseClicks"
