@@ -1,0 +1,15 @@
+{
+
+  "BrowserContextOptions": {
+    //"acceptDownloads": true,
+    "baseURL": "https://coffee-cart.app/",
+    "bypassCSP": false,
+    //"colorScheme": "light",
+    //"isMobile": false,
+    "javaScriptEnabled": true
+  },
+  "Browser": {
+    "name": "chromium",
+    "headed": "0"
+  }
+}
