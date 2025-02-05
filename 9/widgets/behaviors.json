@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"bc9fe2c6bcb10637ee1abf285f5486c9","name":"Can checkout purchase","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"211422b53720235fed5304f8a4e40545","name":"Can click items","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

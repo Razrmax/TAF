@@ -1,0 +1,1 @@
+[{"uid":"3c295eeb86bf5b6c","name":"VerifyCheckoutSuccess(\"Jack\",\"1@coffee.com\")","time":{"start":1738761422033,"stop":1738761423642,"duration":1609},"status":"passed","severity":"minor"},{"uid":"197757c4a4be2946","name":"VerifyPurchaseClicks","time":{"start":1738761423672,"stop":1738761423980,"duration":308},"status":"passed","severity":"minor"}]

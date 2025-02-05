@@ -1,0 +1,12 @@
+2025-02-05 13:17:03.3065|DEBUG|Core.Pages.BasePage|Loaded page URL is https://coffee-cart.app/
+2025-02-05 13:17:03.4091|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.4091|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.4091|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.4091|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.4522|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.4522|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.5355|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.5355|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.6014|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.6074|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
+2025-02-05 13:17:03.6080|DEBUG|Core.Pages.BasePage|Microsoft.Playwright.Core.ConsoleMessage
